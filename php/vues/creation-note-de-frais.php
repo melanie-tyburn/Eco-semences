@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr-FR">
  <head>
-  <title>Crer une note de frais</title>
+  <title>Creer une note de frais</title>
 	<!-- Bootstrap core CSS -->
 	<link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Custom styles CSS -->

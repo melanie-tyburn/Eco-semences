@@ -8,6 +8,8 @@
 	<link href="../../css/style.css" rel="stylesheet">
     <!-- Responsive styles CSS -->
 	<link href="../../css/responsive.css" rel="stylesheet">
+    <!-- Icône des onglets -->
+    <link rel="shortcut icon" href="../../images/logo.png">
  </head>
  <body>
    <header>

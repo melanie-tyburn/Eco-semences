@@ -1,0 +1,30 @@
+/* responsive (résolution 1024)  de la page 'creer une note de frais' */
+@media only screen and (max-width: 1024px){
+   .centre{
+       margin: auto 10vw;
+   }
+
+   .champs-bas{
+       margin-left: 13vw;
+   }
+
+   .button{
+       margin: auto 4vw;
+   }
+}
+
+/* responsive (résolution + de 1440px)  de la page 'creer une note de frais' */
+@media only screen and (min-width: 1540px){
+   .centre{
+       margin: auto 33vw;
+   }
+
+   .title{
+       width: 86%;
+   }
+
+   .champs-bas {
+       margin: auto 9vw;
+   }
+}
+

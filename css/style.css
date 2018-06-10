@@ -56,23 +56,28 @@ input, select{
 
 /* les sections des champs et du commentaire, pour les placer en blocs */
 .champs-gauche, .champs-droite{
-    display:block;
+    display:table-cell;
 }
 
 /* la section du centre, pour placer les champs gauche et droit cote a cote */
 .centre{
-    display:flex;
-    margin-left: 25%;
+    display:table;
+    margin: auto 20vw;
 }
 
 /* le champ permettant de choisir un justificatif */
 .input-file {
-    width:300px;
+    width:325px;
 }
 
+/* le champ regroupant les boutons annuler, enregistrer et soumettre */
+.champs-bas{
+    display: table;
+}
 /* les boutons : annuler, enregistrer, soumettre, centre d'assistance */
 .button{
-    margin : auto 150px;
+    display: table-cell;
+    margin: auto 9vw;
 }
 
 /* footer global pour toutes les pages */

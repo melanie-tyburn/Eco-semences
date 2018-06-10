@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="fr-FR">
  <head>
-  <title>Creer une note de frais</title>
+  <title>Créer une note de frais</title>
 	<!-- Bootstrap core CSS -->
 	<link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Custom styles CSS -->
 	<link href="../../css/style.css" rel="stylesheet">
+    <!-- Responsive styles CSS -->
+	<link href="../../css/responsive.css" rel="stylesheet">
  </head>
  <body>
    <header>
@@ -17,7 +19,7 @@
         <div class="champs-gauche">
 
         <div class="champ">
-              <label for="libelle">Libellé : </label>
+              <label for="libelle">Libellé: </label>
               <input type="text" id="libelle"/>
         </div>
 

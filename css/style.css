@@ -1,7 +1,52 @@
-/****************** style du body de toutes les pages ******************************************/
+/****************** style de toutes les pages ******************************************/
 
 body {
     background-color: #EDEDED;
+}
+
+a {
+    color: #1CA822;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #16811A;
+}
+
+/****************** CSS Specifique a la page de connexion *********************/
+
+/* label : se souvenir de moi */
+.label-long{
+    width:145px;
+    font-weight: bold;
+}
+
+
+/* checkbox : se souvenir de moi */
+input[type=checkbox], input[type=radio]{
+    width : 40px;
+    height: 20px;
+    margin-bottom: 0.5em;
+    vertical-align: middle;
+}
+
+
+/* centre de la page de login */
+.centre-login{
+    display:table;
+    width: 100%;
+}
+
+/* bouton "se connecter" */
+.btn-block {
+    background-color: #1CA822;
+    border: none;
+    width: 10vw;
+}
+
+/* survol du bouton : se connecter */
+.btn-block:hover {
+    background-color: #16811A;
 }
 
 /****************** CSS Specifique a la page : creation d'une note de frais *********************/
@@ -19,7 +64,7 @@ header{
 /* titre : nouvelle note de frais */
 .title{
     display:table-cell;
-    width:75%;
+    width: 59vw;
     text-align: center;
     font-weight:bold;
 }
@@ -52,6 +97,15 @@ label{
 input, select{
     width:200px;
     height:30px;
+    outline-style:none;
+}
+
+textarea{
+    outline-style: none;
+}
+
+input:active, input:focus, textarea:active, textarea:focus, select:active, select:focus{
+    border: 1px solid #1CA822;
 }
 
 /* les sections des champs et du commentaire, pour les placer en blocs */
@@ -77,7 +131,10 @@ input, select{
 /* les boutons : annuler, enregistrer, soumettre, centre d'assistance */
 .button{
     display: table-cell;
-    margin: auto 9vw;
+    background-color: #1CA822;
+    border: none;
+    margin: auto 12vw;
+    
 }
 
 /* footer global pour toutes les pages */

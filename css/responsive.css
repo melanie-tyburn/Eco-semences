@@ -1,30 +1,54 @@
-/* responsive (résolution 1024)  de la page 'creer une note de frais' */
+/* responsive (reolution 1024)  de la page 'creer une note de frais' */
 @media only screen and (max-width: 1024px){
    .centre{
        margin: auto 10vw;
    }
 
-   .champs-bas{
-       margin-left: 13vw;
-   }
-
    .button{
-       margin: auto 4vw;
+       margin: auto 10vw !important;
    }
-}
 
-/* responsive (résolution + de 1440px)  de la page 'creer une note de frais' */
-@media only screen and (min-width: 1540px){
-   .centre{
-       margin: auto 33vw;
+   .btn-block{
+       width: 15vw;
    }
 
    .title{
-       width: 86%;
-   }
-
-   .champs-bas {
-       margin: auto 9vw;
+       width: 65vw !important;
    }
 }
 
+/* responsive (reolution + de 1440px)  de la page 'creer une note de frais' */
+@media only screen and (min-width: 1540px){
+   .centre{
+       margin: auto 25vw;
+   }
+
+   .title{
+       width: 69vw;
+   }
+   .button{
+       margin: auto 12vw;
+   }
+}
+
+@media only screen and (width: 768px){
+     .title{
+       width: 42vw;
+   }
+}
+
+/* responsive (resolution entre 1024 et 1440px) de la page de connexion */
+@media only screen and (max-width: 1440px){
+   .container{
+       margin: auto 16vw;
+   }
+   .button{
+       margin: auto 12vw;
+   }
+   .btn-block{
+       width: 18vw;
+   }
+   .title{
+       width: 67vw !important;
+   }
+}

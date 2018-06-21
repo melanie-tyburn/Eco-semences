@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="fr-FR">
  <head>
-  <title>Créer une note de frais</title>
-	<!-- Bootstrap core CSS -->
+    <title> Creation note de frais </title>
+    	<!-- Bootstrap core CSS -->
 	<link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Custom styles CSS -->
 	<link href="../../css/style.css" rel="stylesheet">
@@ -21,41 +21,41 @@
         <div class="champs-gauche">
 
         <div class="champ">
-              <label for="libelle">Libellé: </label>
-              <input type="text" id="libelle"/>
+              <label for="libelle">Libelle</label>
+              <input type="text" id="libelle" required autofocus/>
         </div>
 
         <div class="champ">
-          <label for="date">Date : </label>
-          <input type="date" id="date"/>
+          <label for="date">Date </label>
+          <input type="date" id="date" required/>
         </div>
 
         <div class="champ">
-          <label for="type">Type : </label>
+          <label for="type">Type </label>
           <select id="type-note">
             <option value="restaurant">Restaurant</option> 
           </select>
         </div>
 
           <div class="champ">
-          <label for="montantHT">Montant HT : </label>     
-          <input type="number" id="ht"/>
+          <label for="montantHT">Montant HT </label>     
+          <input type="number" id="ht" required/>
           </div>
 
           <div class="champ">
-          <label for="tva">TVA : </label>
+          <label for="tva">TVA </label>
           <input type="number" id="tva-cinq" placeholder="5,5%"/>
           <input type="number" id="tva-dix" placeholder="10%"/>
           <input type="number" id="tva-vingt" placeholder="20%"/>
           </div>
 
           <div class="champ">
-          <label for="ttc"> Montant TTC : </label>
+          <label for="ttc"> Montant TTC </label>
           <input type="number" id="ttc" disabled/>
           </div>
 
           <div class="champ">
-            <input id="file" class="input-file" type="file">
+            <input id="file" class="input-file" type="file" required>
           </div>
 
      </div>
@@ -64,9 +64,9 @@
     <div class="champs-droite">
 
        <div class="champ">
-        <label for="commentaire">Commentaire : </label>
+        <label for="commentaire">Commentaire </label>
         <br/><br/> <br/>    
-        <textarea name="textarea" rows="16" cols="60" placeholder=" Mettez ici vos remarques..."></textarea>
+        <textarea name="textarea" rows="16" cols="60" placeholder=" Mettez ici vos remarques..." required></textarea>
        </div>
        
      </div>
@@ -74,17 +74,10 @@
 
      <br/>
       <div class="champs-bas">
-        <input id="annuler" type="reset" value="Annuler" class="button"/>
-        <input id="enregistrer" type="submit" value="Enregistrer" class="button">
-        <input id="soumettre" type="submit" value="Soumettre" class="button">
+        <button id="Annuler" value="Annuler" class="btn btn-lg btn-primary button" type="reset">Annuler</button>
+        <button id="Enregistrer" value="Enregistrer" class="btn btn-lg btn-primary button" type="submit">Enregistrer</button>
+        <button id="Soumettrer" value="Soumettre" class="btn btn-lg btn-primary button" type="submit">Soumettre</button>
      </div>
    </form>
-   <br/> <br/> <br/> <br/>
-   <hr>
-   <footer>
-         <input id="centre-assistance" type="submit" value="Centre d'assistance" class="button">
-         <div class="copyright">Eco'semences 2018. Tous droits réservés.</div>
-         <div class="version">v1.1</div>  
-   </footer>
-  
+   <br/><br/>
  </body>

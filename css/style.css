@@ -137,6 +137,10 @@ input:active, input:focus, textarea:active, textarea:focus, select:active, selec
     
 }
 
+.button:hover {
+    background-color: #16811A;
+}
+
 /* footer global pour toutes les pages */
 footer{
     display:table;

@@ -1,3 +1,4 @@
+<?php include "php/modele/connexion.php" ?>
 <!doctype html>
 <html lang="fr-FR">
  <head>

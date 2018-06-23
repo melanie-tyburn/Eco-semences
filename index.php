@@ -1,4 +1,3 @@
-<?php include "php/modele/connexion.php" ?>
 <!doctype html>
 <html lang="fr-FR">
  <head>
@@ -19,24 +18,26 @@
       <h2 class="title">Se connecter</h2>
     </header>
     <div class="container">
-      <form id="login-form">
+      <form id="login-form" method="post" action="validation-login.php">
         <div class="centre-login">
         <center>
           <label for="matricule">Matricule </label>
-          <input type="text" id="matricule" placeholder="Ex : 012854" required autofocus/>
+          <input type="text" id="matricule" name="matricule" placeholder="Ex : 012854" required autofocus/>
           <br/><br/>
           <label for="password">Mot de passe </label>
-          <input type="password" id="password" placeholder="Mot de passe" required />
+          <input type="password" id="password" name="password" placeholder="Mot de passe" required />
           <br/><br/>
           <label for="se-souvenir" class="label-long"> Se souvenir de moi </label>
           <input type="checkbox" id="se-souvenir" value="remember-me">  
           <br/><br/>   
            <button class="btn btn-lg btn-primary btn-block" type="submit">Se connecter</button>
            <br/>
-           <a href="#"> <i>Mot de passe oublie ?</i> </a></center>
+           <a href="#"> <i>Mot de passe oublie ?</i> </a>
+          </center>
         </div>
       </form>
 
     </div> <!-- /container -->
  </body>
  </html>
+ 

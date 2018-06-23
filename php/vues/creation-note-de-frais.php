@@ -10,13 +10,14 @@
 	<link href="../../css/responsive.css" rel="stylesheet">
     <!-- Icône des onglets -->
     <link rel="shortcut icon" href="../../images/logo.png">
+
  </head>
  <body>
    <header>
      <a href="#"><img src="../../images/logo.png" class="logo" alt="logo eco-semences"/></a>
      <h2 class="title"> Nouvelle note de frais</h2>
    </header>
-   <form id="creation-note" class="class-creation-note">
+   <form id="creation-note" class="class-creation-note" method="POST" action="../controleurs/ajout-ndf-bdd.php">
       <div class="centre">
         <div class="champs-gauche">
 
@@ -39,14 +40,14 @@
 
           <div class="champ">
           <label for="montantHT">Montant HT </label>     
-          <input type="number" id="ht" required/>
+          <input type="number" id="ht" value="" required/>
           </div>
 
           <div class="champ">
           <label for="tva">TVA </label>
-          <input type="number" id="tva-cinq" placeholder="5,5%"/>
-          <input type="number" id="tva-dix" placeholder="10%"/>
-          <input type="number" id="tva-vingt" placeholder="20%"/>
+          <input type="number" id="tva-cinq" value="" placeholder="5,5%"/>
+          <input type="number" id="tva-dix" value="" placeholder="10%"/>
+          <input type="number" id="tva-vingt" value="" placeholder="20%"/>
           </div>
 
           <div class="champ">
@@ -57,9 +58,7 @@
           <div class="champ">
             <input id="file" class="input-file" type="file" required>
           </div>
-
-     </div>
-     
+     </div>     
   
     <div class="champs-droite">
 
@@ -80,4 +79,10 @@
      </div>
    </form>
    <br/><br/>
+   
+ <!-- AJOUT JQUERY POUR SCRIPTS -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- calcul montant ttc -->
+    <script src="../../js/calcul-montant-ttc.js"></script>
  </body>
+ </html>

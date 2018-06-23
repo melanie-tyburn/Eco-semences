@@ -34,7 +34,7 @@
    					<td>ID</td>
   				</tr>
   				<tr>
-    				<td>Enregistré</td>
+    				<td>Enregistrï¿½</td>
     				<td>Soumis</td>
   				</tr>
 			</table>

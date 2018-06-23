@@ -17,8 +17,8 @@
     } else {
         $etat = 1;
     }
-    $insert = $bdd->prepare("INSERT INTO notedefrais (date_ndf, date_demande, type_NDF, commentaire, montant_HT, montant_cinq, montant_dix, montant_vingt, id_etat, matricule, justificatif) 
-    VALUES (:date_ndf, :date_dem, :type, :comm, :mht, :tva5, :tva10, :tva20, :etat, :matricule, :justif)");
+    $insert = $bdd->prepare("INSERT INTO NoteDeFrais (id_NDF, date_ndf, date_demande, type_NDF, commentaire, montant_HT, montant_cinq, montant_dix, montant_vingt, id_etat, matricule, justificatif) 
+    VALUES (0, :date_ndf, :date_dem, :type, :comm, :mht, :tva5, :tva10, :tva20, :etat, :matricule, :justif)");
     $insert->bindParam(':date_ndf', $date_ndf);
     $insert->bindParam(':date_dem', $date_demande);
     $insert->bindParam(':type', $type);
@@ -32,7 +32,7 @@
     $insert->bindParam(':justif', $img_blob);
 
     $insert->execute();
-
+    // print_r($insert->errorInfo());
     $url_page_accueil = '../vues/accueil.php';
     header('Location:'.$url_page_accueil);
 ?>

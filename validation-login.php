@@ -8,7 +8,7 @@
       header('Location:'.$url_page_accueil);
   } else {
     if ($_POST['matricule'] != '' && $_POST['password'] != '') {
-        $query=$bdd->prepare('SELECT * FROM employe WHERE matricule = :matricule');
+        $query=$bdd->prepare('SELECT * FROM Employe WHERE matricule = :matricule');
         $query->bindValue(':matricule',$_POST['matricule'], PDO::PARAM_STR);
         $query->execute();
         $data=$query->fetch();

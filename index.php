@@ -21,10 +21,10 @@
       <form id="login-form" method="post" action="validation-login.php">
         <div class="centre-login">
         <center>
-          <label for="matricule">Matricule </label>
+          <label for="matricule">Matricule* </label>
           <input type="text" id="matricule" name="matricule" placeholder="Ex : 012854" required autofocus/>
           <br/><br/>
-          <label for="password">Mot de passe </label>
+          <label for="password">Mot de passe* </label>
           <input type="password" id="password" name="password" placeholder="Mot de passe" required />
           <br/><br/>
           <label for="se-souvenir" class="label-long"> Se souvenir de moi </label>

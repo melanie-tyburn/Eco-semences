@@ -80,19 +80,6 @@ label{
     font-weight: bold;
 }
 
-/* les input relatifs a la TVA pour les centrer et les aligner */
-#tva-dix, #tva-vingt{
-    display: block;
-    margin-left:124px;
-    text-align:center;
-    margin-bottom: 5px;
-}
-
-#tva-cinq{
-    text-align: center;
-}
-
-
 /* les input et select de chaque champ, pour avoir la meme hauteur et largeur */
 input, select{
     width:200px;

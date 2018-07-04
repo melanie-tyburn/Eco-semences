@@ -149,8 +149,35 @@ footer{
     font-size: 20px;
 }
 
-/****************** CSS Specifique a la page : creation d'une note de frais *********************/
+/****************** CSS Specifique a la page : accueil *********************/
 .menu-button{
 	width:170px;
 	cursor: pointer;
+}
+
+table {
+	width:70%;
+	text-align: center;
+}
+
+thead,tbody {
+	display : block;
+}
+
+tbody {
+	height : 120px;
+	overflow-y : auto;
+	overflow-x : hidden;
+}
+
+td,th {
+	padding : 0 25px;
+}
+
+.accueil {
+	display: flex;
+}
+
+.centre-accueil {
+	margin: auto 10vw;
 }

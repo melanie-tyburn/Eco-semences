@@ -51,4 +51,26 @@
    .title{
        width: 67vw !important;
    }
+
+   /* page accueil */
+   #site-search{
+       width: 79%;
+       margin: auto 20px;
+   }
+
+   .btn-tab {
+       margin: 0 15px !important;
+       width: 75px;
+       font-size: 12px;
+   }
+
+   .tri{
+       font-size: 12px;
+       width: 160px;
+       margin-left: -4px;     
+   }
+
+   tbody {
+       height: 250px;
+   }
 }

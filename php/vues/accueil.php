@@ -13,18 +13,18 @@
  </head>
  <body>
    <header>
-     <a href="#"><img src="../../images/logo.png" class="logo" alt="logo eco-semences"/></a>
+     <a href="accueil.php"><img src="../../images/logo.png" class="logo" alt="logo eco-semences"/></a>
    </header>
    
    <div class="accueil">
    <menu label="Espaces" class="menu-espaces">
    <button type="button" class="menu-button">Espace salarie</button><br/><br/>
-   <button type="button" class="menu-button">Espace manager</button><br/><br/>
-   <button type="button" class="menu-button">Espace Comptabilite</button>  
+   <button type="button" class="menu-button" disabled>Espace manager</button><br/><br/>
+   <button type="button" class="menu-button" disabled>Espace Comptabilite</button>  
   </menu>
   <div class="centre-accueil">
   <section>
-  		<aside class="recherche" id="recherche"> 
+  		<aside class="recherche" id="recherche" class="recherche"> 
   			<form role="search">
   				<div class="search-control">
   					<input type="search" id="site-search" name="search"
@@ -36,16 +36,20 @@
   		
   		<aside id="resultats">
   		
-  		
   		<aside id="filtres">
-  		<button>Toutes</button>
-  		<button>Enregitrees</button>
-  		<button>Soumises</button>
-          <select id="tri" name="tri">
-            <option name="date-demande" value="date-demande">Date Demande</option> 
+  		<button class="btn-tab">Toutes</button>
+  		<button class="btn-tab">Enregistrees</button>
+  		<button class="btn-tab">Soumises</button>
+          <select id="tri" name="tri" class="tri">
+            <option name="date-demande" value="date-demande">Date demande croissante</option> 
+			<option name="date-demande" value="date-demande">Date Demande décroissante</option>
+			<option name="date-demande" value="date-demande">ID</option> 
+			<option name="date-demande" value="date-demande">Libelle</option> 
+			<option name="date-demande" value="date-demande">Prix croissant</option>  
+			<option name="date-demande" value="date-demande">Prix décroissant</option> 
+			<option name="date-demande" value="date-demande">Statut</option> 
           </select>
   		</aside>
-  		
   		<br/>
   		<br/>
   			<table>
@@ -112,9 +116,11 @@
 			</table>
   		</aside>
   		<br/> <br/>
+		<center>
   		<aside id="nouvelle-ndf-btn">
   			<a href="creation-note-de-frais.php">Nouvelle note de frais</a>
   		</aside>
+		</center>
   </section>
   </div>
   </div>

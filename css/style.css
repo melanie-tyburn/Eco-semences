@@ -152,11 +152,23 @@ footer{
 /****************** CSS Specifique a la page : accueil *********************/
 .menu-button{
 	width:170px;
-	cursor: pointer;
+    cursor: pointer;
+    margin-left: 120px;
+}
+
+.accueil {
+	display: flex;
+}
+
+.centre-accueil {
+	margin: auto 10vw;
+}
+
+td,th {
+    width: 300px;
 }
 
 table {
-	width:70%;
 	text-align: center;
 }
 
@@ -170,14 +182,17 @@ tbody {
 	overflow-x : hidden;
 }
 
-td,th {
-	padding : 0 25px;
+.btn-tab {
+    margin: auto 30px;
+    width: 100px;
 }
 
-.accueil {
-	display: flex;
+.tri{
+    margin-left: 332px;
+    width: 210px;
 }
 
-.centre-accueil {
-	margin: auto 10vw;
+#site-search{
+    margin: auto 30px;
+    width: 90%;
 }

@@ -45,21 +45,21 @@
 
           <div class="champ">
           <label for="montantHT">Montant HT* </label>     
-          <input type="number" name="montantHT" id="ht" value="0" required/>
+          <input type="number" name="montantHT" id="ht" value="0" step="0.01" required/>
           </div>
 
           <div class="champ">
           <label for="tva">TVA 5,5%</label>
-          <input type="number" name="tva-cinq" id="tva-cinq" value="0" placeholder="5,5%"/>
+          <input type="number" name="tva-cinq" id="tva-cinq" value="0" step="0.01" placeholder="5,5%"/>
           <label for="tva">10%</label>
-          <input type="number" name="tva-dix" id="tva-dix" value="0" placeholder="10%"/>
+          <input type="number" name="tva-dix" id="tva-dix" value="0" step="0.01" placeholder="10%"/>
           <label for="tva">20%</label>
-          <input type="number" name="tva-vingt"id="tva-vingt" value="0" placeholder="20%"/>
+          <input type="number" name="tva-vingt"id="tva-vingt" value="0" step="0.01" placeholder="20%"/>
           </div>
 
           <div class="champ">
           <label for="ttc"> Montant TTC </label>
-          <input type="number" name="ttc" id="ttc" disabled/>
+          <input type="number" name="ttc" id="ttc" step="0.01" disabled/>
           </div>
 
           <div class="champ">

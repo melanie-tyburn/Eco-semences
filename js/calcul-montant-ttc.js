@@ -1,4 +1,4 @@
 $("body").click(function(){
-    var value_ttc = parseInt($("#ht").val()) + parseInt($("#tva-cinq").val()) + parseInt($("#tva-dix").val()) + parseInt($("#tva-vingt").val());
+    var value_ttc = parseFloat($("#ht").val()) + parseFloat($("#tva-cinq").val()) + parseFloat($("#tva-dix").val()) + parseFloat($("#tva-vingt").val());
     $("#ttc").val(value_ttc);
 });

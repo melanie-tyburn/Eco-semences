@@ -21,9 +21,12 @@
    
    <div class="accueil">
    <menu label="Espaces" class="menu-espaces">
-   <button type="button" class="menu-button">Espace salarié</button><br/><br/>
+   <button type="button" class="menu-button" >Espace salarié</button><br/> <br/>  
    <button type="button" class="menu-button" disabled>Espace manager</button><br/><br/>
-   <button type="button" class="menu-button" disabled>Espace comptabilité</button>  
+   <button type="button" class="menu-button" disabled>Espace comptabilité </button><br/><br/>
+   <form method="POST" action="../../deconnexion.php">
+   <button type="submit" id="deco" name="deco" value="deco" class="menu-button">Déconnexion</button> 
+   </form>
   </menu>
   <div class="centre-accueil">
   <section>
@@ -45,11 +48,11 @@
   		<button class="btn-tab">Soumises</button>
           <select id="tri" name="tri" class="tri">
             <option name="date-demande" value="date-demande">Date demande croissante</option> 
-			<option name="date-demande" value="date-demande">Date Demande déroissante</option>
+			<option name="date-demande" value="date-demande">Date Demande déoissante</option>
 			<option name="date-demande" value="date-demande">ID</option> 
 			<option name="date-demande" value="date-demande">Type</option> 
 			<option name="date-demande" value="date-demande">Prix croissant</option>  
-			<option name="date-demande" value="date-demande">Prix déroissant</option> 
+			<option name="date-demande" value="date-demande">Prix déoissant</option> 
 			<option name="date-demande" value="date-demande">Statut</option> 
           </select>
   		</aside>

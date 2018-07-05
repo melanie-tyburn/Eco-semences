@@ -10,6 +10,8 @@
 	<link href="../../css/responsive.css" rel="stylesheet">
     <!-- Icone des onglets -->
     <link rel="shortcut icon" href="../../images/logo.png">
+
+	<meta charset="utf-8" />
  </head>
  <body>
    <header>
@@ -18,9 +20,9 @@
    
    <div class="accueil">
    <menu label="Espaces" class="menu-espaces">
-   <button type="button" class="menu-button">Espace salarie</button><br/><br/>
+   <button type="button" class="menu-button">Espace salarié</button><br/><br/>
    <button type="button" class="menu-button" disabled>Espace manager</button><br/><br/>
-   <button type="button" class="menu-button" disabled>Espace Comptabilite</button>  
+   <button type="button" class="menu-button" disabled>Espace comptabilité</button>  
   </menu>
   <div class="centre-accueil">
   <section>
@@ -38,7 +40,7 @@
   		
   		<aside id="filtres">
   		<button class="btn-tab">Toutes</button>
-  		<button class="btn-tab">Enregistrees</button>
+  		<button class="btn-tab">Enregistrées</button>
   		<button class="btn-tab">Soumises</button>
           <select id="tri" name="tri" class="tri">
             <option name="date-demande" value="date-demande">Date demande croissante</option> 
@@ -57,7 +59,7 @@
   				<tr>
     				<td>Date demande</td>
    					<td>ID</td>
-   					<td>Libelle</td>
+   					<td>Libellé</td>
    					<td>Prix TTC</td>
    					<td>Statut</td>
    					<td></td>
@@ -66,7 +68,7 @@
   				<tr>
     				<td>17/07/2005</td>
    					<td>012164</td>
-   					<td>Reunion Berlin</td>
+   					<td>Réunion Berlin</td>
    					<td>1500,00</td>
    					<td>Enregistre</td>
    					<td><a href="#">Modifier</a></td>

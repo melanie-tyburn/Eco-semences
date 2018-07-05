@@ -14,6 +14,8 @@
     <!-- Icône des onglets -->
     <link rel="shortcut icon" href="../../images/logo.png">
 
+    <meta charset="utf-8" />
+
  </head>
  <body>
    <header>
@@ -25,7 +27,7 @@
         <div class="champs-gauche">
 
         <div class="champ">
-              <label for="libelle">Libelle*</label>
+              <label for="libelle">Libellé*</label>
               <input type="text" id="libelle" name="libelle" required autofocus/>
         </div>
 

@@ -10,7 +10,7 @@
 	<link href="css/responsive.css" rel="stylesheet">
     <!-- Icoe des onglets -->
     <link rel="shortcut icon" href="images/logo.png">
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
  </head>
  <body>
     <header>
@@ -32,7 +32,7 @@
           <br/><br/>   
            <button class="btn btn-lg btn-primary btn-block" type="submit">Se connecter</button>
            <br/>
-           <a href="#"> <i>Mot de passe oublie ?</i> </a>
+           <a href="#"> <i>Mot de passe oublié ?</i> </a>
           </center>
         </div>
       </form>

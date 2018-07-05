@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!doctype html>
 <html lang="fr-FR">
  <head>
@@ -44,77 +45,27 @@
   		<button class="btn-tab">Soumises</button>
           <select id="tri" name="tri" class="tri">
             <option name="date-demande" value="date-demande">Date demande croissante</option> 
-			<option name="date-demande" value="date-demande">Date Demande décroissante</option>
+			<option name="date-demande" value="date-demande">Date Demande déroissante</option>
 			<option name="date-demande" value="date-demande">ID</option> 
-			<option name="date-demande" value="date-demande">Libelle</option> 
+			<option name="date-demande" value="date-demande">Type</option> 
 			<option name="date-demande" value="date-demande">Prix croissant</option>  
-			<option name="date-demande" value="date-demande">Prix décroissant</option> 
+			<option name="date-demande" value="date-demande">Prix déroissant</option> 
 			<option name="date-demande" value="date-demande">Statut</option> 
           </select>
   		</aside>
   		<br/>
   		<br/>
   			<table>
-  			
   				<tr>
     				<td>Date demande</td>
    					<td>ID</td>
-   					<td>Libellé</td>
+   					<td>Type</td>
    					<td>Prix TTC</td>
    					<td>Statut</td>
    					<td></td>
    					<td></td>
   				</tr>
-  				<tr>
-    				<td>17/07/2005</td>
-   					<td>012164</td>
-   					<td>Réunion Berlin</td>
-   					<td>1500,00</td>
-   					<td>Enregistre</td>
-   					<td><a href="#">Modifier</a></td>
-   					<td><a href="#">Supprimer</a></td>
-   					<td></td>
-  				</tr>
-  				<tr>
-    				<td>17/07/2005</td>
-   					<td>012164</td>
-   					<td>Reunion Berlin</td>
-   					<td>1500,00</td>
-   					<td>Enregistre</td>
-   					<td><a href="#">Modifier</a></td>
-   					<td><a href="#">Supprimer</a></td>
-   					<td></td>
-  				</tr>
-  				<tr>
-    				<td>17/07/2005</td>
-   					<td>012164</td>
-   					<td>Reunion Berlin</td>
-   					<td>1500,00</td>
-   					<td>Enregistre</td>
-   					<td><a href="#">Modifier</a></td>
-   					<td><a href="#">Supprimer</a></td>
-   					<td></td>
-  				</tr>
-  				<tr>
-    				<td>17/07/2005</td>
-   					<td>012164</td>
-   					<td>Reunion Berlin</td>
-   					<td>1500,00</td>
-   					<td>Enregistre</td>
-   					<td><a href="#">Modifier</a></td>
-   					<td><a href="#">Supprimer</a></td>
-   					<td></td>
-  				</tr>
-  				<tr>
-    				<td>17/07/2005</td>
-   					<td>012164</td>
-   					<td>Reunion Berlin</td>
-   					<td>1500,00</td>
-   					<td>Enregistre</td>
-   					<td><a href="#">Modifier</a></td>
-   					<td><a href="#">Supprimer</a></td>
-   					<td></td>
-  				</tr>
+  				<?php include "../controleurs/affichage-ndf-bdd.php"; ?>
 			</table>
   		</aside>
   		<br/> <br/>
